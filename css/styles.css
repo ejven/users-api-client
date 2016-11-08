@@ -1,0 +1,143 @@
+:root {
+    --main-bg-color: #37E8CF;
+    --main-fg-color: #fff;
+    --light-fg-color: rgba(255, 255, 255, 0.56);
+    --nav-bg-color: #51d2c0;
+    --list-bg-color: #F4FDFF;
+}
+
+a,
+a:visited,
+a:active a:hover {
+    color: var(--main-fg-color);
+    text-decoration: none;
+}
+
+nav {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    text-align: center;
+    padding: 0.5em 0;
+    background-color: var(--nav-bg-color);
+    font-size: 1.5em;
+}
+
+nav div {
+    position: absolute;
+    width: 100%;
+}
+
+nav ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+}
+
+nav li {
+    display: block;
+}
+
+nav a {
+    display: block;
+    padding: 0 0.5em;
+}
+
+nav .left {
+    float: left;
+    display: block;
+}
+
+nav .right {
+    float: right;
+    display: block;
+}
+
+body {
+    background-color: var(--main-bg-color);
+    color: var(--main-fg-color);
+    font-family: sans-serif;
+    margin: 0;
+}
+
+.screen {
+    display: none;
+    padding-top: 3em;
+}
+
+input {
+    display: block;
+}
+
+.hidden {
+    display: none !important;
+}
+
+.list {
+    background-color: var(--list-bg-color);
+}
+
+.list div {
+    margin: 0.75em;
+    box-shadow: 0 1px 9px rgba(0, 0, 0, 0.74);
+    overflow: hidden;
+    cursor: pointer;
+    background-color: var(--main-bg-color);
+}
+
+.list .name {
+    margin-top: 1em;
+}
+
+.list img {
+    float: left;
+    margin-right: 1em;
+}
+
+.list a {
+    display: block;
+    overflow: hidden;
+}
+
+.name {
+    font-size: 1.5em;
+    display: block;
+}
+
+.detail {
+    background-color: var(--card-bg-color);
+    padding-left: 2em;
+    padding-right: 2em;
+    padding-bottom: 2em;
+}
+
+.avatar {
+    margin-top: 2em;
+    margin-bottom: 1.5em;
+    text-align: center;
+}
+
+.avatar img {
+    border: 2px solid var(--main-fg-color);
+}
+
+.item {
+    display: block;
+}
+
+label {
+    font-size: 0.75em;
+    margin-top: 0.5em;
+    padding-top: 0.5em;
+    display: block;
+    border-top: 2px solid var(--light-fg-color);
+}
+
+input {
+    background-color: var(--nav-bg-color);
+    color: var(--main-fg-color);
+    border: 0;
+    display: block;
+    font-size: 100%;
+    width: 100%;
+}
